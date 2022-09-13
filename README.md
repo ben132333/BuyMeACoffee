@@ -1,5 +1,5 @@
 # BuyMeACoffee
-Road To Web3 by Alchemy - Week 2 project completion
+Road To Web3 by Alchemy - Week 2 project completion: Building a "Buy Me A Coffee" DeFi App
 
 ## The project
 
