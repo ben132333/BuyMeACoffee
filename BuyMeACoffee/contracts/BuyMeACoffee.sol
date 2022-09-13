@@ -4,8 +4,7 @@
 pragma solidity ^0.8.0;
 
 // Switch this to your own contract address once deployed, for bookkeeping!
-// Example Contract Address on Goerli: 0x0017f2F644E842f3cf3F8E408dA38F900006394f
-// Exercise implemented: 0xeAB6234F92cb170BA52c33de7526587e3A52261C
+// Example Contract Address on Goerli: 0xb263cf88C0cfDe0A7cCe095cCCCF3023de3f3D8F
 
 contract BuyMeACoffee {
     // Event to emit when a Memo is created.
@@ -77,6 +76,7 @@ contract BuyMeACoffee {
         require(owner.send(address(this).balance));
     }
 
+    // Allow your smart contract to update the withdrawal address, only by owner
     modifier onlyOwner() {
         require(msg.sender == owner, "Sneaky attempt, but you can only change this address if you're the owner.");
         _;
